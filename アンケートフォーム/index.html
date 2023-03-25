@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>ご利用アンケート</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>ご利用アンケート</h1>
+                </div>
+                <div class="col-sm-6 text-right" >
+                    <a href="#">HOMEへ戻る</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <form action="" method="post" class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <p>こちらはアンケートフォームページです。ご要望などがありましたらお聞かせください</p>
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="例) 山田 太郎">
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス <span class="badge badge-danger">必須</span></label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+
+              
+
+                <div class="form-group">
+                    <label class="d-block">満足度はいかがですか</label>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="q2" id="q2_1" value="1">
+                        <label for="q2_1" class="form-check-label">非常に満足</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="q2" id="q2_2" value="2">
+                        <label for="q2_2" class="form-check-label">やや満足</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="q2" id="q2_3" value="3">
+                        <label for="q2_3" class="form-check-label">普通</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="q2" id="q2_4" value="4">
+                        <label for="q2_4" class="form-check-label">やや不満</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="q2" id="q2_5" value="5">
+                        <label for="q2_5" class="form-check-label">不満</label>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="message">ご意見</label>
+                    <textarea name="message" id="message" rows="10" class="form-control"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">送信する</button>
+            </div>
+        </form>    
+    </div>
+    <hr>
+
+    <div class="container">
+        <footer>
+            <p class="text-center">&copy; warap0n</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
